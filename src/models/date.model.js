@@ -1,19 +1,23 @@
 import mongoose from 'mongoose';
 
 const dateSchema = new mongoose.Schema({
-    descripcion:{
+    description:{
         type: String,
         required: true,
+        
     },
-    Service: {
+    service: {
         type: String,
         required: true,
+
     },
     date:{
         type: String,
+        required: true,
     },
     hour:{
         type: String,
+        required: true,
     },
     user:{
         type: mongoose.Schema.Types.ObjectId,
